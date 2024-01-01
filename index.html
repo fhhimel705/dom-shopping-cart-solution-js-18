@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- style link -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="mx-auto">
+    <header>
+        <h1 class="text-4xl text-center font-semibold mt-4">My shopping cart</h1>
+    </header>
+    <main class=" mt-10">
+        <div class="bg-slate-100 lg:px-24 lg:py-16 px-4 py-5">
+            <section class="lg:flex justify-between items-center lg:pb-0 pb-3 bg-white rounded-lg">
+                <div class="flex items-center">
+                    <img src="images/product-1.png" class="w-32" alt="">
+                    <h3 class="text-2xl font-semibold">iPhone 11 128GB Black</h3>
+                </div>
+                <div class="grid grid-cols-3 gap-7 items-center">
+                    <div class="flex ml-auto lg:ml-0 lg:order-1 order-2">
+                        <button class="font-semibold text-4xl" id="phone-minus">-</button>
+                        <input class="bg-gray-100 font-semibold  text-xl text-center w-12 rounded-xl" min="0" value="1"
+                            type="number" id="phone-field">
+                        <button class="font-semibold text-4xl" id="phone-plus">+</button>
+                    </div>
+                    <p class="text-2xl mx-auto  font-semibold lg:order-2 order-1">$<span id="phone-price">1219</span></p>
+                    <img class="mx-auto lg:mx-0 w-5 order-3" src="images/remove.png" alt="">
+                </div>
+            </section>
+            <section class="lg:flex justify-between mt-5 items-center lg:pb-0 pb-3 bg-white rounded-lg">
+                <div class="flex items-center">
+                    <img src="images/product-2.png" class="w-32" alt="">
+                    <h3 class="text-2xl font-semibold">iPhone 11 Silicone Case - Black</h3>
+                </div>
+                <div class="grid grid-cols-3 gap-7 items-center">
+                    <div class=" flex ml-auto lg:ml-0 lg:order-1 order-2 ">
+                        <button class="font-semibold text-4xl" id="case-minus">-</button>
+                        <input class="bg-gray-100 font-semibold text-xl  w-12 rounded-xl text-center" min="0" value="1"
+                            type="number" id="case-field">
+                        <button class="font-semibold text-4xl" id="case-plus">+</button>
+                    </div>
+                    <p class="text-2xl mx-auto font-semibold lg:order-2 order-1">$<span id="case-price">59</span></p>
+                    <img class="mx-auto lg:mx-0 w-5 order-3" src="images/remove.png" alt="">
+                </div>
+            </section>
+            <section class=" mt-5 grid gap-1 items-center  bg-white rounded-lg px-7 py-4">
+                <div class="text-xl font-semibold flex justify-between">
+                    <p>Subtotal :</p>
+                    <p>$<span id="sub-total-price">1,278</span></p>
+                </div>
+                <div class="text-xl font-semibold flex justify-between">
+                    <p>Tax :</p>
+                    <p>$<span id="tax">0</span></p>
+                </div>
+                <div class="text-xl font-semibold flex justify-between">
+                    <p>Total :</p>
+                    <p>$<span id="total-price">1,278</span></p>
+                </div>
+            </section>
+            <div class="flex justify-end">
+                <button class="bg-green-400 text-white px-7 py-3 text-xl mt-5 rounded-lg items-end">Check Out</button>
+            </div>
+        </div>
+
+    </main>
+    <script src="js fiels/utilities.js"></script>
+    <script src="js fiels/phone.js"></script>
+    <script src="js fiels/case.js"></script>
+</body>
+
+</html>
