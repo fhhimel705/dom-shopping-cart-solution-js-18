@@ -16,3 +16,7 @@ document.getElementById('case-minus').addEventListener('click',function(){
     taxPrice();
     totalPrice();
 })
+
+document.getElementById('remove-case').addEventListener('click', function(){
+  removeSection('case-section');
+})

@@ -38,3 +38,9 @@ taxPrice();
 totalPrice();
 
 });
+
+document.getElementById('remove-phone').addEventListener('click',function(){
+  // const phoneSection = document.getElementById('phone-section');
+  // phoneSection.style.display = 'none';
+  removeSection('phone-section');
+})

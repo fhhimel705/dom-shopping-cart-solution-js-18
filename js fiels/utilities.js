@@ -50,3 +50,8 @@ function totalPrice(){
     const totalPrice = subTotalPrice + taxPrice;
     setInnerText('total-price',totalPrice);
 }
+
+function removeSection(itemSectionId) {
+  const itemSection = document.getElementById(itemSectionId);
+  itemSection.style.display = "none";
+}
